@@ -18,6 +18,9 @@ Teams:
     TAB_PREFIX: '&c[R] '
     TEAM_COLOR: RED
     BED_ITEM: RED_BED
+    GLASS_ITEM: RED_STAINED_GLASS
+    WOOL_ITEM: RED_WOOL
+    TERRACOTTA_ITEM: RED_TERRACOTTA
     SPAWN_LOCATION:
       ==: org.bukkit.Location
       world: world
@@ -67,6 +70,9 @@ Teams:
     TAB_PREFIX: '&e[Y] '
     TEAM_COLOR: YELLOW
     BED_ITEM: YELLOW_BED
+    GLASS_ITEM: YELLOW_STAINED_GLASS
+    WOOL_ITEM: YELLOW_WOOL
+    TERRACOTTA_ITEM: YELLOW_TERRACOTTA
     SPAWN_LOCATION:
       ==: org.bukkit.Location
       world: world
@@ -116,6 +122,9 @@ Teams:
     TAB_PREFIX: '&9[B] '
     TEAM_COLOR: BLUE
     BED_ITEM: BLUE_BED
+    GLASS_ITEM: BLUE_STAINED_GLASS
+    WOOL_ITEM: BLUE_WOOL
+    TERRACOTTA_ITEM: BLUE_TERRACOTTA
     SPAWN_LOCATION:
       ==: org.bukkit.Location
       world: world
@@ -165,6 +174,9 @@ Teams:
     TAB_PREFIX: '&a[G] '
     TEAM_COLOR: GREEN
     BED_ITEM: LIME_BED
+    GLASS_ITEM: LIME_STAINED_GLASS
+    WOOL_ITEM: LIME_WOOL
+    TERRACOTTA_ITEM: LIME_TERRACOTTA
     SPAWN_LOCATION:
       ==: org.bukkit.Location
       world: world

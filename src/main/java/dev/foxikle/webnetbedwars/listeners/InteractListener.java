@@ -22,7 +22,6 @@ public class InteractListener implements Listener {
             String key = event.getItem().getItemMeta().getPersistentDataContainer().get(Items.NAMESPACE, PersistentDataType.STRING);
             if(key != null){
                 plugin.getItemAbilityDispatcher().dispatch(key, event.getPlayer(), event);
-                event.setCancelled(true);
             }
         }
     }

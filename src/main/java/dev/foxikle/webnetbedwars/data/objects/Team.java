@@ -8,5 +8,5 @@ import java.util.List;
 import java.util.UUID;
 
 public record Team(String displayName, String prefix, ChatColor color, Material bedType, Location spawnLocation, Location generatorLocation,
-                   Location itemShopLocation, Location teamShopLocation, Location chestLocation) {
+                   Location itemShopLocation, Location teamShopLocation, Location chestLocation, Material woolType, Material glassType, Material terracottaType) {
 }

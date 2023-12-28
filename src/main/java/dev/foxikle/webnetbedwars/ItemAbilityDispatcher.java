@@ -14,7 +14,6 @@ public class ItemAbilityDispatcher {
     }
 
     public void dispatch(String abilityKey, Player user, PlayerInteractEvent event) {
-        event.setCancelled(true);
         switch (abilityKey) {
             case "FIREBALL" -> {
                 if(event.getAction().isRightClick()) {
@@ -38,7 +37,11 @@ public class ItemAbilityDispatcher {
             }
             case "SPECTATOR_COMPASS" -> plugin.getGameManager().getMenuManager().getSpectatorSelectorMenu().open(user);
             case "LOBBY_REQUEST" -> user.sendMessage("No leaving >:)");
-            case "SPECTATOR_BOOTS" -> plugin.getGameManager().getMenuManager().getSpectatorSpeedMenu().open(user);
+            case "SPECTATOR_SPEED_SELECTOR" -> plugin.getGameManager().getMenuManager().getSpectatorSpeedMenu().open(user);
+            default -> { // not an ability
+                return;
+            }
         }
+        event.setCancelled(true);
     }
 }

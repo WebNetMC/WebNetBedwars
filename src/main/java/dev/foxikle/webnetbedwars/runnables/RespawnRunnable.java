@@ -29,7 +29,7 @@ public class RespawnRunnable extends BukkitRunnable {
 
         switch (timeLeft) {
             case 1, 2, 3 -> {
-                player.sendTitle(ChatColor.YELLOW + "Respawning in " + timeLeft, "", 5, 5, 5);
+                player.sendTitle(ChatColor.YELLOW + "Respawning in " + timeLeft, "", 0, 21, 0);
                 player.playSound(player.getLocation(), Sound.UI_BUTTON_CLICK,.8f, 1f);
             }
         }

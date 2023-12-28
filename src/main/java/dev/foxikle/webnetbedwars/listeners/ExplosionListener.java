@@ -4,18 +4,13 @@ import dev.foxikle.webnetbedwars.WebNetBedWars;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.block.Block;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockExplodeEvent;
 import org.bukkit.event.entity.EntityExplodeEvent;
-import org.bukkit.event.entity.ProjectileHitEvent;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class ExplosionListener implements Listener {
@@ -33,9 +28,7 @@ public class ExplosionListener implements Listener {
 
             Map<Location, Material> testing = new HashMap<>();
 
-            event.blockList().forEach(block ->
-                    testing.put(block.getLocation(), block.getType())
-            );
+            event.blockList().forEach(block -> testing.put(block.getLocation(), block.getType()));
 
             Bukkit.getScheduler().runTaskLater(plugin, () -> event.blockList().forEach(block -> {
                 if(!block.hasMetadata("blockdata")) {
