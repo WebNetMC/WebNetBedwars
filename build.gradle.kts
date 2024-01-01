@@ -21,7 +21,7 @@ dependencies {
     implementation("org.bstats:bstats-bukkit:3.0.2")
     compileOnly ("me.clip:placeholderapi:2.11.5")
     implementation("fr.mrmicky:fastboard:2.0.2")
-    compileOnly("dev.foxikle:customnpcs:1.5.2-pre2")
+    compileOnly("dev.foxikle:customnpcs:1.6-pre3")
     implementation("com.github.coderFlameyosFlow:WoodyMenus:1.5.7")
 }
 
